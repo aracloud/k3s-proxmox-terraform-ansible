@@ -14,7 +14,7 @@ resource "proxmox_vm_qemu" "proxmox_vm_master" {
     ignore_changes = [
       ciuser,
       sshkeys,
-      disk,
+      disks,
       network
     ]
   }
@@ -37,7 +37,7 @@ resource "proxmox_vm_qemu" "proxmox_vm_workers" {
     ignore_changes = [
       ciuser,
       sshkeys,
-      disk,
+      disks,
       network
     ]
   }
